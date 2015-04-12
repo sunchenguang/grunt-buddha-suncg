@@ -1,42 +1,25 @@
-<!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Grunt-buddha-suncg by sunchenguang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Grunt-buddha-suncg</h1>
+      <h2 class="project-tagline">buddha bless me code no bug</h2>
+      <a href="https://github.com/sunchenguang/grunt-buddha-suncg" class="btn">View on GitHub</a>
+      <a href="https://github.com/sunchenguang/grunt-buddha-suncg/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/sunchenguang/grunt-buddha-suncg/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
-
-  <title>Grunt-buddha-suncg</title>
-  <meta name="description" content="buddha bless me code no bug">
-
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-</head>
-
-<body>
-
-  <div class="wrapper">
-    <header>
-      <h1 class="title">Grunt-buddha-suncg</h1>
-    </header>
-    <div id="container">
-      <p class="tagline">buddha bless me code no bug</p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/sunchenguang/grunt-buddha-suncg/tarball/master" class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/sunchenguang/grunt-buddha-suncg/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/sunchenguang/grunt-buddha-suncg" class="code">View Grunt-buddha-suncg on GitHub</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h1>
+    <section class="main-content">
+      <h1>
 <a id="grunt-buddha" class="anchor" href="#grunt-buddha" aria-hidden="true"><span class="octicon octicon-link"></span></a>grunt-buddha</h1>
 
 <blockquote>
@@ -79,20 +62,20 @@
 <a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h3>
 
 <h4>
-<a id="optionsseparator" class="anchor" href="#optionsseparator" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.separator</h4>
+<a id="optionswho" class="anchor" href="#optionswho" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.who</h4>
 
 <p>Type: <code>String</code>
-Default value: <code>',  '</code></p>
+Default value: <code>'buddha'</code></p>
 
-<p>A string value that is used to do something with whatever.</p>
+<p>指明是用佛祖还是神兽来保佑代码</p>
 
 <h4>
-<a id="optionspunctuation" class="anchor" href="#optionspunctuation" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.punctuation</h4>
+<a id="optionscommentsymbol" class="anchor" href="#optionscommentsymbol" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.commentSymbol</h4>
 
 <p>Type: <code>String</code>
-Default value: <code>'.'</code></p>
+Default value: <code>'//'</code></p>
 
-<p>A string value that is used to do something else with whatever else.</p>
+<p>文件中拼接佛祖或神兽时使用的注释符</p>
 
 <h3>
 <a id="usage-examples" class="anchor" href="#usage-examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage Examples</h3>
@@ -100,31 +83,13 @@ Default value: <code>'.'</code></p>
 <h4>
 <a id="default-options" class="anchor" href="#default-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Default Options</h4>
 
-<p>In this example, the default options are used to do something with whatever. So if the <code>testing</code> file has the content <code>Testing</code> and the <code>123</code> file had the content <code>1 2 3</code>, the generated result would be <code>Testing, 1 2 3.</code></p>
-
-<div class="highlight highlight-js"><pre>grunt.initConfig({
-  buddha<span class="pl-k">:</span> {
-    options<span class="pl-k">:</span> {},
-    files<span class="pl-k">:</span> {
-      <span class="pl-s"><span class="pl-pds">'</span>dest/default_options<span class="pl-pds">'</span></span><span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>src/testing<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>src/123<span class="pl-pds">'</span></span>],
-    },
-  },
-})</pre></div>
-
-<h4>
-<a id="custom-options" class="anchor" href="#custom-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Custom Options</h4>
-
-<p>In this example, custom options are used to do something else with whatever else. So if the <code>testing</code> file has the content <code>Testing</code> and the <code>123</code> file had the content <code>1 2 3</code>, the generated result in this case would be <code>Testing: 1 2 3 !!!</code></p>
-
 <div class="highlight highlight-js"><pre>grunt.initConfig({
   buddha<span class="pl-k">:</span> {
     options<span class="pl-k">:</span> {
-      separator<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>: <span class="pl-pds">'</span></span>,
-      punctuation<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span> !!!<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>who<span class="pl-pds">'</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">'</span>buddha<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>commentSymbol<span class="pl-pds">'</span></span><span class="pl-k">:</span><span class="pl-s"><span class="pl-pds">'</span>//<span class="pl-pds">'</span></span>
     },
-    files<span class="pl-k">:</span> {
-      <span class="pl-s"><span class="pl-pds">'</span>dest/default_options<span class="pl-pds">'</span></span><span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>src/testing<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>src/123<span class="pl-pds">'</span></span>],
-    },
+   dist<span class="pl-k">:</span>[<span class="pl-s"><span class="pl-pds">'</span>example/*.js<span class="pl-pds">'</span></span>]
   },
 })</pre></div>
 
@@ -136,32 +101,22 @@ Default value: <code>'.'</code></p>
 <h2>
 <a id="release-history" class="anchor" href="#release-history" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release History</h2>
 
-<p><em>(Nothing yet)</em></p>
+<p>2015-4-12   v0.0.1    init</p>
 
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p>Copyright (c) 2015 suncg. Licensed under the MIT license.</p>
-        </article>
-      </div>
-    </div>
-    <footer>
-      <div class="owner">
-      <p><a href="https://github.com/sunchenguang" class="avatar"><img src="https://avatars0.githubusercontent.com/u/9911042?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/sunchenguang">sunchenguang</a> maintains <a href="https://github.com/sunchenguang/grunt-buddha-suncg">Grunt-buddha-suncg</a></p>
 
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/sunchenguang/grunt-buddha-suncg">Grunt-buddha-suncg</a> is maintained by <a href="https://github.com/sunchenguang">sunchenguang</a>.</span>
 
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/sunchenguang/grunt-buddha-suncg/tarball/master" class="tar">tar</a><a href="https://github.com/sunchenguang/grunt-buddha-suncg/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
 
   
-</body>
+  </body>
 </html>
+
