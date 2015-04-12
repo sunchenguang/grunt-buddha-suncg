@@ -1,5 +1,5 @@
 /*
- * grunt-buddha
+ * grunt-buddha-suncg
  * 
  *
  * Copyright (c) 2014 materliu
