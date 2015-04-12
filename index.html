@@ -1,0 +1,167 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Grunt-buddha-suncg</title>
+  <meta name="description" content="buddha bless me code no bug">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Grunt-buddha-suncg</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">buddha bless me code no bug</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/sunchenguang/grunt-buddha-suncg/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/sunchenguang/grunt-buddha-suncg/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/sunchenguang/grunt-buddha-suncg" class="code">View Grunt-buddha-suncg on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a id="grunt-buddha" class="anchor" href="#grunt-buddha" aria-hidden="true"><span class="octicon octicon-link"></span></a>grunt-buddha</h1>
+
+<blockquote>
+<p>buddha bless me</p>
+</blockquote>
+
+<h2>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<p>This plugin requires Grunt.</p>
+
+<p>If you haven't used <a href="http://gruntjs.com/">Grunt</a> before, be sure to check out the <a href="http://gruntjs.com/getting-started">Getting Started</a> guide, as it explains how to create a <a href="http://gruntjs.com/sample-gruntfile">Gruntfile</a> as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:</p>
+
+<div class="highlight highlight-shell"><pre>npm install grunt-buddha --save-dev</pre></div>
+
+<p>Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:</p>
+
+<div class="highlight highlight-js"><pre>grunt.loadNpmTasks(<span class="pl-s"><span class="pl-pds">'</span>grunt-buddha<span class="pl-pds">'</span></span>);</pre></div>
+
+<h2>
+<a id="the-buddha-task" class="anchor" href="#the-buddha-task" aria-hidden="true"><span class="octicon octicon-link"></span></a>The "buddha" task</h2>
+
+<h3>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h3>
+
+<p>In your project's Gruntfile, add a section named <code>buddha</code> to the data object passed into <code>grunt.initConfig()</code>.</p>
+
+<div class="highlight highlight-js"><pre>grunt.initConfig({
+  buddha<span class="pl-k">:</span> {
+    options<span class="pl-k">:</span> {
+      <span class="pl-c">// Task-specific options go here.</span>
+    },
+    your_target<span class="pl-k">:</span> {
+      <span class="pl-c">// Target-specific file lists and/or options go here.</span>
+    },
+  },
+})</pre></div>
+
+<h3>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h3>
+
+<h4>
+<a id="optionsseparator" class="anchor" href="#optionsseparator" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.separator</h4>
+
+<p>Type: <code>String</code>
+Default value: <code>',  '</code></p>
+
+<p>A string value that is used to do something with whatever.</p>
+
+<h4>
+<a id="optionspunctuation" class="anchor" href="#optionspunctuation" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.punctuation</h4>
+
+<p>Type: <code>String</code>
+Default value: <code>'.'</code></p>
+
+<p>A string value that is used to do something else with whatever else.</p>
+
+<h3>
+<a id="usage-examples" class="anchor" href="#usage-examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage Examples</h3>
+
+<h4>
+<a id="default-options" class="anchor" href="#default-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Default Options</h4>
+
+<p>In this example, the default options are used to do something with whatever. So if the <code>testing</code> file has the content <code>Testing</code> and the <code>123</code> file had the content <code>1 2 3</code>, the generated result would be <code>Testing, 1 2 3.</code></p>
+
+<div class="highlight highlight-js"><pre>grunt.initConfig({
+  buddha<span class="pl-k">:</span> {
+    options<span class="pl-k">:</span> {},
+    files<span class="pl-k">:</span> {
+      <span class="pl-s"><span class="pl-pds">'</span>dest/default_options<span class="pl-pds">'</span></span><span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>src/testing<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>src/123<span class="pl-pds">'</span></span>],
+    },
+  },
+})</pre></div>
+
+<h4>
+<a id="custom-options" class="anchor" href="#custom-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Custom Options</h4>
+
+<p>In this example, custom options are used to do something else with whatever else. So if the <code>testing</code> file has the content <code>Testing</code> and the <code>123</code> file had the content <code>1 2 3</code>, the generated result in this case would be <code>Testing: 1 2 3 !!!</code></p>
+
+<div class="highlight highlight-js"><pre>grunt.initConfig({
+  buddha<span class="pl-k">:</span> {
+    options<span class="pl-k">:</span> {
+      separator<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>: <span class="pl-pds">'</span></span>,
+      punctuation<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span> !!!<span class="pl-pds">'</span></span>,
+    },
+    files<span class="pl-k">:</span> {
+      <span class="pl-s"><span class="pl-pds">'</span>dest/default_options<span class="pl-pds">'</span></span><span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>src/testing<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>src/123<span class="pl-pds">'</span></span>],
+    },
+  },
+})</pre></div>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using <a href="http://gruntjs.com/">Grunt</a>.</p>
+
+<h2>
+<a id="release-history" class="anchor" href="#release-history" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release History</h2>
+
+<p><em>(Nothing yet)</em></p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Copyright (c) 2015 suncg. Licensed under the MIT license.</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/sunchenguang" class="avatar"><img src="https://avatars0.githubusercontent.com/u/9911042?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/sunchenguang">sunchenguang</a> maintains <a href="https://github.com/sunchenguang/grunt-buddha-suncg">Grunt-buddha-suncg</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/sunchenguang/grunt-buddha-suncg/tarball/master" class="tar">tar</a><a href="https://github.com/sunchenguang/grunt-buddha-suncg/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
