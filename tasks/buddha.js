@@ -1,8 +1,8 @@
 /*
- * grunt-buddha
+ * grunt-buddha-suncg
  * 
  *
- * Copyright (c) 2014 materliu
+ * Copyright (c) 2014 suncg
  * Licensed under the MIT license.
  */
 
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     // Please see the Grunt documentation for more information regarding task
     // creation: http://gruntjs.com/creating-tasks
 
-    grunt.registerMultiTask('buddha', 'Buddha\'s grace illuminates code as sunshine', function() {
+    grunt.registerMultiTask('buddha', 'buddha bless me', function() {
 
         // Merge task-specific and/or target-specific options with these defaults.
         var options = this.options({
@@ -36,7 +36,6 @@ module.exports = function(grunt) {
             };
         var commentFilepath = path.join(__dirname, commentFilepathMap[who]),
             commentContent = grunt.file.read(commentFilepath),
-
             lineCommentArr = commentContent.split(grunt.util.normalizelf('\n'));
 
         lineCommentArr.forEach(function(value, index, arr) {
