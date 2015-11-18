@@ -73,6 +73,8 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 
 ## Release History
+> 2015-11-18 v0.0.4 Markdown Change from new PC
+
 > 2015-10-23 v0.0.3 README.MD change by [suncg](http://www.sunchenguang.com/)
 
 > 2015-10-7 v0.0.2 optimization
